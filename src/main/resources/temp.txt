@@ -2,26 +2,29 @@ spring.application.name=mcp-server
 
 server.port=8080
 
-spring.datasource.url=jdbc:mysql://mysql:3306/mcp_server_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+#spring.datasource.url=jdbc:mysql://mysql:3306/mcp_server_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+spring.datasource.url=jdbc:mysql://localhost:3307/mcp_server_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
 spring.datasource.username=root
 spring.datasource.password=root
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.format_sql=true
 
-jira.api.url=https://ahirechetan291.atlassian.net/rest/api/3/issue
-jira.api.email=ahirechetan291@gmail.com
-jira.api.token=
-jira.project.key=MS
-abuseipdb.api.key=
+jira.api.url=https://kamlesh-pawar.atlassian.net/rest/api/3/search/jql
+jira.api.email=kamleshpawar5278@gmail.com
+jira.api.token=ATATT3xFfGF0KEPvQ9A6L_tPd9biQgBhQczTfwfYl22c7kcIPZjVnYDCJmD3cvS0d_kCxQTRd8PlZ19a0EPJKIieI9gpKrLaLY5RPMJD7w59KQ3r0WgAvqhmK4p1MBmHr4zeze6z1DaoLqH8HDH5Xgh2Ugnw_tPwoUqmNji-DkCtl5S_qIVNJVA=AC02B36F
+jira.project.key=MIT
+
+
+abuseipdb.api.key=ce9da9b0aad90855261acb466f382a883dee1cc892c7b7a454645ac18c48410b7a12468692db90e1
 
 # VirusTotal
-virustotal.api.key=
+virustotal.api.key=8c008f77b8a3275592d51c32ec0636432a0e03d58459bac53a8d14393660b1c9
 
 # Google Safe Browsing
-google.api.key=
+google.api.key=AIzaSyBXMri5tztXdZLygb9ZL_Fjm3u9E9-JoRQ
 
 
 
@@ -29,7 +32,7 @@ google.api.key=
 spring.mail.host=smtp.gmail.com
 spring.mail.port=587
 spring.mail.username=itskpawar@gmail.com
-spring.mail.password=
+spring.mail.password=ovxr ufcy tmzz wagg
 spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
 
